@@ -1,9 +1,10 @@
 import "./App.css";
+import Welcome from "./screens/Welcome/Welcome";
 
 function App() {
   return (
     <div className="App">
-      <h1>Meditation App</h1>
+      <Welcome />
     </div>
   );
 }
