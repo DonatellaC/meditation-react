@@ -4,33 +4,33 @@ import buddhistYogaPose from "../../images/buddhist-yoga-pose.png";
 import lotus from "../../images/lotus.png";
 import nightMode from "../../images/night-mode.png";
 
-import { ImgOptions } from "./MeditationOption.styled";
+import { ImgOptions, Options, Option, Text } from "./MeditationOption.styled";
 
 function MeditationOptions() {
   return (
-    <div className="meditation-options">
-      <article className="option option1">
+    <Options>
+      <Option>
         <ImgOptions src={buddhistYogaPose} alt="icons of a yoga pose" />
-        <div className="text">
+        <Text>
           <h6>Meditation Zen</h6>
           <p>Recommended in the morning</p>
-        </div>
-      </article>
-      <article className="option option2">
+        </Text>
+      </Option>
+      <Option>
         <ImgOptions src={lotus} alt="icons of a lotus" />
-        <div className="text">
+        <Text>
           <h6>Breathing</h6>
           <p>Recommended all day</p>
-        </div>
-      </article>
-      <article className="option option3">
+        </Text>
+      </Option>
+      <Option>
         <ImgOptions src={nightMode} alt="icons of a moon" />
-        <div className="text">
+        <Text>
           <h6>Relaxing music</h6>
           <p>Recommended at night</p>
-        </div>
-      </article>
-    </div>
+        </Text>
+      </Option>
+    </Options>
   );
 }
 

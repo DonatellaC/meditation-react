@@ -1,11 +1,12 @@
 import React from "react";
-import "./Header.css";
+
+import { TitleHeader } from "./Header.styled";
 
 function Header() {
   return (
-    <div>
-      <h1 className="title">Welcome</h1>
-    </div>
+    <TitleHeader>
+      <h1>Welcome</h1>
+    </TitleHeader>
   );
 }
 
