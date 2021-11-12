@@ -1,10 +1,11 @@
 import React from "react";
+import Header from "../../components/Header/Header";
 import "./MeditationZen.styled";
 
 function MeditationZen() {
   return (
     <div>
-      <h1>Meditation</h1>
+      <Header title="Meditation" />
     </div>
   );
 }

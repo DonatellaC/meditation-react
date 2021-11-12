@@ -1,9 +1,10 @@
 import React from "react";
+import Header from "../../components/Header/Header";
 
 function Breathe() {
   return (
     <div>
-      <h1>Breathe</h1>
+      <Header title="Breathe" subTitle="Prepare to breathe" />
     </div>
   );
 }

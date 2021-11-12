@@ -1,9 +1,10 @@
 import React from "react";
+import Header from "../../components/Header/Header";
 
 function Music() {
   return (
     <div>
-      <h1>Relaxing music</h1>
+      <Header title="Relaxing music" />
     </div>
   );
 }

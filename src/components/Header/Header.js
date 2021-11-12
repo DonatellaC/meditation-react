@@ -1,12 +1,15 @@
 import React from "react";
 
-import { TitleHeader } from "./Header.styled";
+import { TitleHeader, SubTitle, Title } from "./Header.styled";
 
-function Header() {
+function Header({ title, subTitle }) {
   return (
-    <TitleHeader>
-      <h1>Welcome</h1>
-    </TitleHeader>
+    <>
+      <TitleHeader>
+        <Title>{title}</Title>
+        <SubTitle>{subTitle}</SubTitle>
+      </TitleHeader>
+    </>
   );
 }
 
