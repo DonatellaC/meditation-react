@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  overflow: hidden;
 }
 
 body {
   background-color: #211d1d;
   font-family: "Robot", sans-serif;
+  overflow: hidden;
 }

@@ -6,7 +6,11 @@ import { ContentWelcome, LandscapeWelcome } from "./Welcome.styled.js";
 function Welcome() {
   return (
     <LandscapeWelcome>
-      <Header title="Welcome" subTitle="What would you like to do today?" />
+      <Header
+        title="Welcome"
+        subTitle="What would you like to do today?"
+        color={"#fff"}
+      />
       <ContentWelcome>
         <MeditationOptions />
       </ContentWelcome>
