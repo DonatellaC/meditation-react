@@ -4,6 +4,7 @@ import landscapeBreathe from "../../images/vector-beautiful-landscape-illustrati
 export const LandscapeBreathe = styled.div`
   background: url(${landscapeBreathe}) no-repeat center center fixed;
   background-size: cover;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,8 +21,6 @@ export const ContainerBreathe = styled.div`
   position: relative;
   transform: scale(1);
 
-  animation: grow 3s linear forwards;
-
   @keyframes grow {
     from {
       transform: scale(1);
@@ -30,8 +29,6 @@ export const ContainerBreathe = styled.div`
       transform: scale(1.2);
     }
   }
-
-  animation: shrink 3s linear forwards;
 
   @keyframes shrink {
     from {
@@ -51,6 +48,7 @@ export const Text = styled.p`
 export const ButtonsBreathe = styled.div`
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 `;
 
 export const Button = styled.button`
