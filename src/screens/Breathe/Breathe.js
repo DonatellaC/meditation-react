@@ -49,7 +49,7 @@ function Breathe() {
 
   return (
     <LandscapeBreathe>
-      <Header title="Breathe" subTitle="Prepare to breathe" color={"#2d2e2e"} />
+      <Header title="Breathe" subTitle="Prepare to breathe" color="#2d2e2e" />
       <ContainerBreathe style={isGrowing ? grow : shrink}>
         <Circle></Circle>
         <Text>{text}</Text>

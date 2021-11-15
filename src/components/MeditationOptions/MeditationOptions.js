@@ -10,7 +10,7 @@ import { ImgOptions, Options, Option, Text } from "./MeditationOption.styled";
 function MeditationOptions() {
   return (
     <Options>
-      <Link to="/meditation" style={{ textDecoration: "none" }}>
+      <Link to="/meditation">
         <Option>
           <ImgOptions src={buddhistYogaPose} alt="icons of a yoga pose" />
           <Text>
@@ -19,7 +19,7 @@ function MeditationOptions() {
           </Text>
         </Option>
       </Link>
-      <Link to="/breathe" style={{ textDecoration: "none" }}>
+      <Link to="/breathe">
         <Option>
           <ImgOptions src={lotus} alt="icons of a lotus" />
           <Text>
@@ -28,7 +28,7 @@ function MeditationOptions() {
           </Text>
         </Option>
       </Link>
-      <Link to="/music" style={{ textDecoration: "none" }}>
+      <Link to="/music">
         <Option>
           <ImgOptions src={nightMode} alt="icons of a moon" />
           <Text>
