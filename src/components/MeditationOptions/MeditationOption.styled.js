@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const ImgOptions = styled.img`
   color: white;
@@ -11,6 +12,10 @@ export const Options = styled.div`
   align-items: center;
   margin-top: 30px;
   height: 750px;
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
 `;
 
 export const Option = styled.div`

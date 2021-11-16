@@ -1,16 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./MeditationOption.styled.js";
 import buddhistYogaPose from "../../images/buddhist-yoga-pose.png";
 import lotus from "../../images/lotus.png";
 import nightMode from "../../images/night-mode.png";
 
-import { ImgOptions, Options, Option, Text } from "./MeditationOption.styled";
+import {
+  ImgOptions,
+  Options,
+  Option,
+  Text,
+  StyledLink,
+} from "./MeditationOption.styled";
 
 function MeditationOptions() {
   return (
     <Options>
-      <Link to="/meditation">
+      <StyledLink to="/meditation">
         <Option>
           <ImgOptions src={buddhistYogaPose} alt="icons of a yoga pose" />
           <Text>
@@ -18,8 +23,8 @@ function MeditationOptions() {
             <p>Recommended in the morning</p>
           </Text>
         </Option>
-      </Link>
-      <Link to="/breathe">
+      </StyledLink>
+      <StyledLink to="/breathe">
         <Option>
           <ImgOptions src={lotus} alt="icons of a lotus" />
           <Text>
@@ -27,8 +32,8 @@ function MeditationOptions() {
             <p>Recommended all day</p>
           </Text>
         </Option>
-      </Link>
-      <Link to="/music">
+      </StyledLink>
+      <StyledLink to="/music">
         <Option>
           <ImgOptions src={nightMode} alt="icons of a moon" />
           <Text>
@@ -36,7 +41,7 @@ function MeditationOptions() {
             <p>Recommended at night</p>
           </Text>
         </Option>
-      </Link>
+      </StyledLink>
     </Options>
   );
 }
