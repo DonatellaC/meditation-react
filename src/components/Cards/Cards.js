@@ -1,7 +1,13 @@
-// import React from "react";
 import React, { useState, useRef } from "react";
 
-import { ContainerCard, ImgCard, TextCard, WrapperCard } from "./Cards.styled";
+import {
+  ContainerCard,
+  ImgCard,
+  TextCard,
+  WrapperCard,
+  ContainerContent,
+  ContainerMusic,
+} from "./Cards.styled";
 import waterfall from "../../audio/waterfall.mp3";
 
 function Cards({ sunsetWaterfall, title }) {
@@ -25,23 +31,31 @@ function Cards({ sunsetWaterfall, title }) {
       <ContainerCard>
         <WrapperCard>
           <ImgCard src={sunsetWaterfall} alt="Sunset Waterfall Illustration" />
-          <TextCard>{title}</TextCard>
+          <ContainerContent>
+            <TextCard>{title}</TextCard>
+            <ContainerMusic>
+              <audio
+                ref={audioPlayer}
+                src={waterfall}
+                preload="metadata"
+              ></audio>
+              <button onClick={playAudio}>
+                {isPlaying ? "Pause" : "Play"}
+              </button>
+
+              {/* current time */}
+              <div>0.00</div>
+
+              {/* progress bar */}
+              <div>
+                <input type="range" />
+              </div>
+
+              {/* duration*/}
+              <div>1.59</div>
+            </ContainerMusic>
+          </ContainerContent>
         </WrapperCard>
-        <div>
-          <audio ref={audioPlayer} src={waterfall} preload="metadata"></audio>
-          <button onClick={playAudio}>{isPlaying ? "Pause" : "Play"}</button>
-
-          {/* current time */}
-          <div>0.00</div>
-
-          {/* progress bar */}
-          <div>
-            <input type="range" />
-          </div>
-
-          {/* duration*/}
-          <div>1.59</div>
-        </div>
       </ContainerCard>
     </>
   );

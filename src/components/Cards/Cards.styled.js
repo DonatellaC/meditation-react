@@ -27,5 +27,14 @@ export const TextCard = styled.p`
   font-weight: bold;
   margin: 10px 0;
   cursor: pointer;
+`;
+
+export const ContainerContent = styled.div`
   position: absolute;
+`;
+
+export const ContainerMusic = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
 `;
