@@ -45,25 +45,6 @@ export const Text = styled.p`
   color: #2d2e2e;
 `;
 
-export const ButtonsBreathe = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-`;
-
-export const Button = styled.button`
-  margin: 7px;
-  padding: 1.2em 2em;
-  background-image: linear-gradient(45deg, #ffc107 0%, #ff8b5f 100%);
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  color: #fff;
-  text-transform: uppercase;
-`;
-
 export const Circle = styled.div`
   background-color: #fad0c2;
   height: 100%;

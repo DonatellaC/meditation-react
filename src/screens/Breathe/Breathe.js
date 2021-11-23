@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import Header from "../../components/Header/Header";
 import {
   ContainerBreathe,
-  Button,
-  ButtonsBreathe,
   Circle,
   GradientCircle,
   GradientCircleBlur,
@@ -59,13 +57,7 @@ function Breathe() {
         <GradientCircle></GradientCircle>
         <GradientCircleBlur></GradientCircleBlur>
       </ContainerBreathe>
-      <section>
-        <ButtonsBreathe>
-          <Button>3 Times</Button>
-          <Button>5 Times</Button>
-          <Button>10 Times</Button>
-        </ButtonsBreathe>
-      </section>
+      <section></section>
     </LandscapeBreathe>
   );
 }
